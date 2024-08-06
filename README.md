@@ -2,12 +2,12 @@ RICE IMAGE CLASSIFICATION BASED ON DEEP LEARNING
 
 !![image](https://github.com/user-attachments/assets/2cc73418-d147-496e-bcb5-b3e953636658)
 
-                                   Authors: 
+ ### **Authors** 
 Jane Martha,Yvonne Mwangi, Bethuel Maruru, Loise Mburuga,Sonia Ojay,Faith Mwenda 
 
 
 
-                             PROJECT  OVERVIEW
+### Project overview
 
  The project focuses on leveraging a dataset of Rice images to develop machine learning models capable of
  accurately identifying quality rice. The dataset sourced from Kaggle, comprises of images classified into 5 categories:
@@ -16,15 +16,17 @@ Jane Martha,Yvonne Mwangi, Bethuel Maruru, Loise Mburuga,Sonia Ojay,Faith Mwenda
  
 ![image](https://github.com/user-attachments/assets/b58185b5-7d4f-44d3-97f2-48b99f782b53)
 
-                          PROBLEM STATEMENT
+### Problem statement
 
                           
 Rice is a staple food for more than half of the world's population, making its quality and type assessment crucial for both consumers and producers. Traditional methods of rice classification are labor-intensive, time-consuming, and prone to human error. With the advent of machine learning and image processing technologies, there is a significant opportunity to automate and improve the accuracy of rice classification processes.
 
-                           DATA UNDERSTANDING
+### Data understanding
 
 
-Source: Kaggle's Rice Image Classification dataset. Structure: The dataset icontains five rice varieties namely arbori,basmati,ipsala,jasmine,karacadag with 75,000 images.
+Source: Kaggle's Rice Image Classification dataset.  https://www.muratkoklu.com/datasets/
+
+Structure: The dataset icontains five rice varieties namely arbori,basmati,ipsala,jasmine,karacadag with 75,000 images.
  directories: train: Contains the following Class names and their indices:
 Arborio: 0
 Basmati: 1
@@ -35,41 +37,44 @@ Karacadag: 4
 Class names:
 ['Arborio', 'Basmati', 'Ipsala', 'Jasmine', 'Karacadag']
 
-                            OBJECTIVES
+### Objectives
 
 
 The primary objective of this project is to develop a machine learning model capable of accurately classifying different types of rice grains based on their images. The classification will be performed using a dataset comprising various rice types, each with distinct visual characteristics.
 
 
-                            Methodology
+### Methodology
 
-  This project encompassed the following tasks:
+This project encompassed the following tasks:
 
-Data Acquisition and Preprocessing: Collection and preprocessing of a diverse set of rice grain images to ensure the dataset is suitable for model training and evaluation.
-Model Development: Design and implementation of machine learning models using techniques such as Convolutional Neural Networks (CNNs) to classify the rice images.
-Model Evaluation: Evaluation of the model's performance using appropriate metrics (e.g., accuracy, precision, recall, F1-score) to ensure its reliability and robustness.
-Optimization: Fine-tuning the model to enhance its performance and reduce computational costs.
+- Data Acquisition and Preprocessing: Collection and preprocessing of a diverse set of rice grain images to ensure the dataset is suitable for model training and evaluation.
+- Model Development: Design and implementation of machine learning models using techniques such as Convolutional Neural Networks (CNNs) to classify the rice images.
+- Model Evaluation: Evaluation of the model's performance using appropriate metrics (e.g., accuracy, precision, recall, F1-score) to ensure its reliability and robustness.
+- Optimization: Fine-tuning the model to enhance its performance and reduce computational costs.
 Deployment: Development of a user-friendly interface for practical applications, enabling end-users to upload rice images and receive classification results.
 
 
-                           Expected Outcomes
+### Expected Outcomes
 The expected outcomes of this project include:
 
-A trained machine learning model capable of classifying rice types with high accuracy.
-A comprehensive analysis of the model's performance and potential areas for improvement.
-A deployable application that facilitates easy and accurate rice classification for end-users.
+a. A trained machine learning model capable of classifying rice types with high accuracy.
+
+b. A comprehensive analysis of the model's performance and potential areas for improvement.
+
+c. A deployable application that facilitates easy and accurate rice classification for end-users.
+
 By addressing these objectives and challenges, this project aims to contribute to the advancement of agricultural technologies and improve the efficiency and accuracy of rice classification processes.
 
-                        Models Categories
+### Model Categories
 
 1: General-purpose CNN Model(CNN)
-2:Tuned General-purpose CNN Model
-3:ResNet50V2 Mode
-4:tuning on the ResNet50V2 Model
+2: Tuned General-purpose CNN Model
+3: ResNet50V2 Mode
+4: tuning on the ResNet50V2 Model
 
 
 
-                         OUTPUT
+### Output
 
 ![image](https://github.com/user-attachments/assets/10e5953d-a131-4f17-af76-94fc75680daf)
 
@@ -77,7 +82,7 @@ By addressing these objectives and challenges, this project aims to contribute t
 We also Checked Class Balance to ensure that all classes had a similar number of instances. We confirmed that our dataset was balanced because all classes had equal number of instances
 
 
-                       MODEL ARCHITECTURE
+### Model architecture
 
 VGG-16 CNN Model Architecture
 
@@ -107,7 +112,7 @@ Model: "functional_22"
 The baseline model architecture comprises a total of 14,780,997 parameters, with all parameters being trainable. The model's size is approximately 250.02 MB. There are no non-trainable parameters in this architecture, showing that all parameters are updated during the training process
 
 
-                Classification Report:
+### Classification Report
 
               precision    recall  f1-score   support
 
@@ -125,7 +130,7 @@ weighted avg       0.98      0.98      0.98     75000
 
 
 
-                                               Summary:
+### Summary
                                                
 The classification report indicates a very well-performing model with high precision, recall, and F1-scores for all classes, and an overall accuracy of 98%. The macro and weighted averages confirm that the model’s performance is robust across all classes and that the class distribution doesn't skew the performance metrics significantly.
 
@@ -143,18 +148,26 @@ The ROC curves and AUC values demonstrate that the model performs exceptionally 
 The validation accuracy consistently being higher or very close to the training accuracy is a positive sign of good generalization While The close tracking of validation loss with the training loss further confirms the model's strong generalization performance.
 
 
-                           Conclusion
+### Conclusion
                            
 The rice image classification project demonstrates the potential of using advanced machine learning techniques to automate and improve the accuracy of rice type identification. By leveraging convolutional neural networks (CNNs) and image processing technologies, we have developed a robust model capable of distinguishing between various types of rice grains based on their visual characteristics.
 
-                         Recommendations
+### Recommendations
+Future enhancements to this project could include:
 
+a. Model fine-tuning: Further fine-tuning the model using advanced techniques such as ensemble learning, more sophisticated image preprocessing steps and exploring the use 
+   of other deep learning architectures could yield even better performance.
+   
+b. Scalability: The dataset could be enhanced with additional rice grain variants in future to cater for other varieties like Bomba, Calasparra, Valencia etc. currently not 
+   classified.
+   
+c. Integration with other systems: Integratation of the classification system with existing agricultural or inventory management systems would allow for broader application.
 
- Future enhancements to this project could include expanding the dataset to include a wider variety of rice types and further fine-tuning the model using advanced techniques such as ensemble learning. Additionally, integrating more sophisticated image preprocessing steps and exploring the use of other deep learning architectures could yield even better performance.
-                           
-                        
-                        Links  
-                        
+d. Incremental Learning: Incremental learning could be implemented to update the model with new data without retraining from scratch. 
+                     
+                       
+### Links  
+### Deployment link                    
 https://dsc-phase-5-capstone-project-ggfbckjgs6bs8aglbyahcp.streamlit.app/
                         
 
