@@ -153,9 +153,9 @@ The rice image classification project demonstrates the potential of using advanc
  Future enhancements to this project could include expanding the dataset to include a wider variety of rice types and further fine-tuning the model using advanced techniques such as ensemble learning. Additionally, integrating more sophisticated image preprocessing steps and exploring the use of other deep learning architectures could yield even better performance.
                            
                         
-
+                        Links  
                         
-
+https://dsc-phase-5-capstone-project-ggfbckjgs6bs8aglbyahcp.streamlit.app/
                         
 
                             
